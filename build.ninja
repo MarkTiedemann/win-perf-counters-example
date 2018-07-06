@@ -1,0 +1,7 @@
+cl_flags = /nologo /Wall
+
+rule build
+  description = build
+  command = cl.exe $cl_flags $in
+
+build example.exe example.obj: build example.cpp
